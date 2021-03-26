@@ -8,6 +8,10 @@ python demo/demo.py \
 --onlyhighest MODEL.WEIGHTS meshrcnn://meshrcnn_R50.pth
 ```
 
+```bash
+python demo/demo.py --config-file configs/pix3d/meshrcnn_R50_FPN.yaml --input demo_input/7043.jpg --output demo_output --onlyhighest MODEL.WEIGHTS meshrcnn://meshrcnn_R50.pth
+```
+
 The `--onlyhighest` flag will return the highest scoring object prediction. If you remove this flag, all predictions will be returned.
 
 Here are some notes to clarify and guide you how to use the outputs from Mesh R-CNN.
